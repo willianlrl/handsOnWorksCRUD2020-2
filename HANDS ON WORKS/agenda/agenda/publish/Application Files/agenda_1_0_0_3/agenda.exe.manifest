@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="agenda.exe" version="1.0.0.3" publicKeyToken="3c619af0030cca04" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="agenda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="agenda.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="agenda.exe" size="14336">
+      <assemblyIdentity name="agenda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NLPJwv4TVGGWFsbZljmWkRcsljFCgSNPjRxqoB+PE34=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="agenda.exe.config" size="557">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YrRbslBRg9oyLu9nYsBgBmd8sykZHd1bPNvsyyIWw/w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="tb_agenda.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nH7wIjRmAcFRuthET3NvdWOpaOfyQaRoUIY8Gan+STc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="tb_agenda_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O050RO7dqnICQIDQWi26BK0YNObq5A7/J5x75zj8Pmg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-4IHCJIO\ADMUNIVALI" issuerKeyHash="3b53d16644423e527fe267a2532398935cc7c36e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wqtziRn3uC0rD7rsMtGhUu7PqNUHKtKmb0lv+9fQoUg=</DigestValue></Reference></SignedInfo><SignatureValue>r/U33geKCy4epXaCiaOML6+OtdG55WOBKhGq8QFW8i9FAEUnUabT+d7K2iUgscIgl/zLyZRHPFhx62tqAdXXXhtfwrKWLFsUDdxPFmoZc4G6+uhv30cNQY6mLEkWcF0xqsQyQToK1SdhaOeiSalJRqEEOWOIscvcKFdD/ag228E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vJK9FARsFVI+sNWsUGvaID1Px2D7yPwAMwdOp95C8GngD3cPgiY1dSzVwnAkwmnpMYxCAWbqrH1KQGPPQlbXxGcLAWWScGVA8WEohpqD09KBlKfzOmorl6wITMMT0H3riqFH8wJWkcX8uATwDvfcAW+KXfLkfg3wvotMAWAl3s0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="48a1d0d7fb6f496fa6d22a07d5a8cfee52a1d132ecba0f2b2db8f7198973abc2" Description="" Url=""><as:assemblyIdentity name="agenda.exe" version="1.0.0.3" publicKeyToken="3c619af0030cca04" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-4IHCJIO\ADMUNIVALI</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QagCAvx/PO0TDljuPLOpoGbX2j0qKvZIUmeKN3QR/hI=</DigestValue></Reference></SignedInfo><SignatureValue>jklpDmu6FN0hBn55b+N0elohqc78vRNlUuK0/hxbbSXiPV8w4xuTJOFr4PVlEvMOjCZuldPaPGnfwsr+o6bx7etzmL+LF6WDsoHBfZAEpK2KxLXWujYP7Aocs7YVw8jwAlQx3BzEFFeVNFGUx7X5Ck/CBWKQE4/P9BJ38b+jLaE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vJK9FARsFVI+sNWsUGvaID1Px2D7yPwAMwdOp95C8GngD3cPgiY1dSzVwnAkwmnpMYxCAWbqrH1KQGPPQlbXxGcLAWWScGVA8WEohpqD09KBlKfzOmorl6wITMMT0H3riqFH8wJWkcX8uATwDvfcAW+KXfLkfg3wvotMAWAl3s0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQQW8HElvWKLhH9oXk6XDKADANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQARABFAFMASwBUAE8AUAAtADQASQBIAEMASgBJAE8AXABBAEQATQBVAE4ASQBWAEEATABJMB4XDTIwMDkxODIyNTQwN1oXDTIxMDkxOTA0NTQwN1owPzE9MDsGA1UEAx40AEQARQBTAEsAVABPAFAALQA0AEkASABDAEoASQBPAFwAQQBEAE0AVQBOAEkAVgBBAEwASTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvJK9FARsFVI+sNWsUGvaID1Px2D7yPwAMwdOp95C8GngD3cPgiY1dSzVwnAkwmnpMYxCAWbqrH1KQGPPQlbXxGcLAWWScGVA8WEohpqD09KBlKfzOmorl6wITMMT0H3riqFH8wJWkcX8uATwDvfcAW+KXfLkfg3wvotMAWAl3s0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCM0Jzay+18oBJt6ivlWRMZ+CZIeVq5DvHJH0ablW93IqaX/BYTLpRSFiA5xgJFCwKvLBxDpNapmlYIjyOuTBAKyR71T9swbYgoV0yWznNA5Ax4lCFFhuIyxdeT3YUXJ7NT66fhZTPIOiX1QN7FsUkkkCxekq4CMOyMlyntYn2HiQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
